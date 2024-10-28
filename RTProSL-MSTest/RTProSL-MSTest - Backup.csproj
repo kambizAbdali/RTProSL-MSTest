@@ -1,0 +1,50 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>RTProSL_MSTest</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="RTProSL_MSTest\**" />
+	  <EmbeddedResource Remove="RTProSL_MSTest\**" />
+	  <None Remove="RTProSL_MSTest\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.1.35" />
+		<PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
+		<PackageReference Include="ExtentReports" Version="4.1.0" />
+		<PackageReference Include="log4net" Version="2.0.14" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+		<PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+		<PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+		<PackageReference Include="coverlet.collector" Version="3.2.0" />
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" version="5.0.0" />
+		<PackageReference Include="Microsoft.CSharp" version="4.7.0" />
+		<PackageReference Include="NLog" Version="5.2.3" />
+		<PackageReference Include="NUnit" version="3.13.3" />
+		<PackageReference Include="NunitXml.TestLogger" Version="4.1.0" />
+		<PackageReference Include="OpenCvSharp4" Version="*" />
+		<PackageReference Include="OpenCvSharp4.runtime.win" Version="*" />
+		<PackageReference Include="Selenium.Support" Version="4.15.0" />
+		<PackageReference Include="Selenium.WebDriver" version="4.15.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="127.0" />
+		<PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="17.17134.0" />
+		<PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" version="7.0.0" />
+		<PackageReference Include="InputSimulator" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="TestClasses\Administration\Move\" />
+	  <Folder Include="TestClasses\General\" />
+	</ItemGroup>
+</Project>
